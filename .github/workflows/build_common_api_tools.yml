@@ -39,7 +39,7 @@ jobs:
           #sudo apt-get update
           #sudo apt install oracle-java11-installer
           sudo apt-get update
-          sudo apt-get install openjdk-8-jdk
+          sudo apt-get install openjdk-11-jdk
           
           
           git clone https://github.com/COVESA/capicxx-core-tools.git
