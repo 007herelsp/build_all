@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,7 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          sudo apt install openjdk-11-jdk
+          #sudo apt install openjdk-11-jdk
           #sudo add-apt-repository ppa:linuxuprising/java
           #sudo apt-get update
           #sudo apt install oracle-java11-installer
