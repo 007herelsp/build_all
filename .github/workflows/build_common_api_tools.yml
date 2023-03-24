@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         #run: echo Hello, world!
-        run: java
+        run: java -version
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -41,7 +41,7 @@ jobs:
           #sudo apt install oracle-java11-installer
           sudo apt-get update
           sudo apt-get install openjdk-11-jdk
-          java --version
+          java -version
           return
           
           git clone https://github.com/COVESA/capicxx-core-tools.git
