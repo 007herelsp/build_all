@@ -38,7 +38,8 @@ jobs:
           #sudo add-apt-repository ppa:linuxuprising/java
           #sudo apt-get update
           #sudo apt install oracle-java11-installer
-          
+          java --version
+          return
           git clone https://github.com/COVESA/capicxx-core-tools.git
           cd capicxx-core-tools/org.genivi.commonapi.core.releng
           mvn -Dtarget.id=org.genivi.commonapi.core.target clean verify
