@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu20.04
+    runs-on: ubuntu16.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,9 +40,10 @@ jobs:
           #sudo apt-get update
           #sudo apt install oracle-java11-installer
           sudo apt-get update
-          #sudo apt-get install openjdk-11-jdk
+          sudo apt-get install openjdk-8-jdk
+          sudo apt install maven
           java -version
-          return
+          mvn -version
           
           git clone https://github.com/COVESA/capicxx-core-tools.git
           cd capicxx-core-tools/org.genivi.commonapi.core.releng
